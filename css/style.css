@@ -1,0 +1,82 @@
+/* ============================= */
+/* Smooth Scroll */
+/* ============================= */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ============================= */
+/* Base Styling */
+/* ============================= */
+body {
+  background-color: #dedede;
+  margin: 0;
+  padding: 15px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Paragraph styling */
+p {
+  text-align: center;
+  max-width: 700px;
+  margin: 15px auto;
+  line-height: 1.5;
+}
+
+/* ============================= */
+/* GRID (Mobile First) */
+/* ============================= */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 10px;
+}
+
+/* Each image block */
+figure {
+  margin: 0;
+  text-align: center;
+}
+
+/* Images */
+img {
+  width: 100%;
+  height: auto;              /* FIX: no stretching */
+  border: 5px solid blue;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+/* Hover effect (optional but nice) */
+img:hover {
+  transform: scale(1.03);
+}
+
+/* Caption */
+figcaption {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+/* ============================= */
+/* Tablet (>= 772px) */
+/* ============================= */
+@media screen and (min-width: 772px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ============================= */
+/* Large Screen (>= 998px) */
+/* ============================= */
+@media screen and (min-width: 998px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
